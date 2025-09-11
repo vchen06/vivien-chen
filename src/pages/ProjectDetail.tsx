@@ -23,7 +23,7 @@ const ProjectDetail = () => {
       ]
     },
     {
-      id: "task-management-app",
+      id: "flood-forecast",
       title: "Task Management App",
       description: "A collaborative tool with drag-and-drop tasks and real-time updates.",
       gallery: [

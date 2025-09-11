@@ -19,7 +19,7 @@ const Projects = () => {
       image: "🧘"
     },
     {
-      id: "weather-analytics-dashboard",
+      id: "flood-forecast",
       title: "Flood Forecast Model",
       description: "A Long Short-Term Memory (LSTM) neural network machine learning model in Python that predicts water levels based on precipitation and water level data from the Mississippi River.",
       technologies: ["Python", "scikit-learn", "Keras", "Pandas", "NumPy"],

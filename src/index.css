@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 200 50% 98%;
+    --foreground: 215 25% 25%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 25%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 25%;
+
+    --primary: 200 70% 70%;
+    --primary-foreground: 215 25% 25%;
+    --primary-glow: 180 60% 80%;
+
+    --secondary: 160 50% 75%;
+    --secondary-foreground: 215 25% 25%;
+
+    --muted: 210 30% 95%;
+    --muted-foreground: 215 15% 55%;
+
+    --accent: 240 60% 80%;
+    --accent-foreground: 215 25% 25%;
+
+    --destructive: 0 75% 70%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 25% 88%;
+    --input: 210 25% 92%;
+    --ring: 200 70% 70%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(200 70% 70%), hsl(240 60% 80%));
+    --gradient-secondary: linear-gradient(135deg, hsl(160 50% 75%), hsl(180 60% 80%));
+    --gradient-background: linear-gradient(135deg, hsl(200 50% 98%), hsl(180 40% 96%));
+    --gradient-glass: linear-gradient(135deg, rgba(255,255,255,0.8), rgba(255,255,255,0.5));
+    
+    --shadow-elegant: 0 10px 30px -10px hsl(200 70% 70% / 0.15);
+    --shadow-glow: 0 0 30px hsl(180 60% 80% / 0.25);
+    
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 1rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background: var(--gradient-background);
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply backdrop-blur-sm border border-white/30 bg-white/60;
+    background: var(--gradient-glass);
+    box-shadow: var(--shadow-elegant);
+    border-radius: var(--radius);
+  }
+  
+  .glow-effect {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 600;
+  }
+  
+  .hover-lift {
+    transition: var(--transition-smooth);
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-glow);
+  }
+}

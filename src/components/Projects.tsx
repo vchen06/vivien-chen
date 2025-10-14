@@ -5,32 +5,39 @@ import { Link } from 'react-router-dom';
 const Projects = () => {
   const projects = [
     {
-      id: "critterworld",
-      title: "Critterworld: Artificial Life Simulator",
-      description: "An app that simulates a world of critters that act autonomously according to unique “genomes”, completing tasks such as eating, reproducing, and traveling.",
-      technologies: ["Java", "JavaFX", "Threads", "MVC"],
-      image: "🦎"
+      id: "autoboat",
+      title: "Cornell AutoBoat",
+      description: "Building the computer vision model and LiDAR object detection system as part of a team building an autonomous boat.",
+      technologies: ["C++", "ROS2", "Python", "YOLO", "LiDAR", "OpenCV"],
+      image: "🛥️"
     },
     {
-      id: "task-management-app",
+      id: "dtwin",
+      title: "Sustainability Digital Twin",
+      description: "A webapp containing graphs and Unity simulations with live data representing pollution emissions in NYC boroughs.",
+      technologies: ["SQL", "PostgreSQL", "Java", "React", "Node.js", "Unity", "Python"],
+      image: "🏙️"    
+    },
+    {
+      id: "loom",
+      title: "Multi-Process Loom",
+      description: "An automated multi-axis loom machine capable of achieving user-requested 3D weaving, knitting, and braiding patterns.",
+      technologies: ["C++", "Arduino", "Python","ROS", "Rapid Prototyping"],
+      image: "🧶"
+    },
+    {
+      id: "yoga",
       title: "PoseGuru: Automated Yoga Instructor",
       description: "An assistive yoga app to help users practice yoga correctly at home by providing a workout to follow and real-time feedback on poses.",
       technologies: ["Python", "OpenCV", "Tkinter", "scikit-learn", "MediaPipe"],
       image: "🧘"
     },
     {
-      id: "flood-forecast",
-      title: "Flood Forecast Model",
-      description: "A Long Short-Term Memory (LSTM) neural network machine learning model in Python that predicts water levels based on precipitation and water level data from the Mississippi River.",
-      technologies: ["Python", "scikit-learn", "Keras", "Pandas", "NumPy"],
-      image: "🌤️"
-    },
-    {
-      id: "loom",
-      title: "Multi-Process Loom",
-      description: "An automated multi-axis loom machine capable of achieving user-requested 3D weaving, knitting, and braiding patterns.",
-      technologies: ["C++", "Arduino", "Python"],
-      image: "🧶"
+      id: "critterworld",
+      title: "Critterworld: Artificial Life Simulator",
+      description: "An app that simulates a world of critters that act autonomously according to unique “genomes”, completing tasks such as eating, reproducing, and traveling.",
+      technologies: ["Java", "JavaFX", "Threads", "MVC", "Parsing"],
+      image: "🦎"
     }
   ];
 

@@ -23,6 +23,16 @@ const ProjectDetail = () => {
       ]
     },
     {
+      id: "yoga",
+      title: "PoseGuru: Automated Yoga Instructor",
+      description: "An assistive yoga app to help users practice yoga correctly at home by providing a workout to follow and real-time feedback on poses.",
+      gallery: [
+        { type: "image", src: "/images/pose.png" },
+        { type: "image", src: "/images/posestart.png" },
+        { type: "text", content: "PoseGuru uses OpenCV and MediaPipe BlazePose for real-time body tracking to detect whether users are holding the correct yoga poses. It has them hold the pose properly for a select amount of time before moving on to the rest of the workout." },
+      ]
+    },
+    {
       id: "flood-forecast",
       title: "Task Management App",
       description: "A collaborative tool with drag-and-drop tasks and real-time updates.",
@@ -42,6 +52,25 @@ const ProjectDetail = () => {
         { type: "image", src: "/images/loom1.JPG" },
         { type: "image", src: "/images/loom2.png" },
         { type: "image", src: "/images/loom3.png" }
+      ]
+    },
+    {
+      id: "autoboat",
+      title: "Cornell AutoBoat",
+      description: "Building the computer vision model and LiDAR object detection system as part of a team building an autonomous boat.",
+      gallery: [
+        { type: "text", content: "" },
+        { type: "image", src: "/images/pcl.png" }
+      ]
+    },
+    {
+      id: "dtwin",
+      title: "Sustainability Digital Twin",
+      description: "A webapp containing graphs and Unity simulations with live data representing pollution emissions in NYC boroughs.",
+      gallery: [
+        { type: "text", content: "" },
+        { type: "image", src: "/images/dt1.png" },
+        { type: "image", src: "/images/dt2.png" }
       ]
     }
   ];
@@ -87,14 +116,36 @@ const ProjectDetail = () => {
             <div className="space-y-8">
               {project.gallery?.map((block, index) => {
                 if (block.type === "image") {
-                  return (
-                    <img 
-                      key={index}
-                      src={block.src} 
-                      alt={`Project ${index + 1}`} 
-                      className="w-full h-auto object-cover" 
-                    />
-                  );
+                  // Special styling for yoga project images
+                  if (project.id === "yoga" || project.id === "dtwin") {
+                    return (
+                      <img
+                        key={index}
+                        src={block.src}
+                        alt={`Project ${index + 1}`}
+                        className="w-[27rem] h-auto inline-block mr-2 mb-2 rounded-lg"
+                      />
+                    );
+                  } else if (project.id === "loom") {
+                    return (
+                      <img
+                        key={index}
+                        src={block.src}
+                        alt={`Project ${index + 1}`}
+                        className="w-[18rem] h-auto inline-block mr-2 mb-2 rounded-lg"
+                      />
+                    );
+                  }
+                  else {
+                    return (
+                      <img 
+                        key={index}
+                        src={block.src} 
+                        alt={`Project ${index + 1}`} 
+                        className="w-full h-auto object-cover rounded-lg" 
+                      />
+                    );
+                  }
                 }
                 if (block.type === "text") {
                   return (

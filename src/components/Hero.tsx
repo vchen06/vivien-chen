@@ -39,10 +39,10 @@ const Hero = () => {
           <p className="text-xl md:text-2xl text-muted-foreground mb-4 font-medium">
             Computer Science Major at Cornell University
           </p>
-          
+{/*           
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
             hihihihi blahlkajdfk;j dkjfldsjfk
-          </p> 
+          </p>  */}
            {/* passionate about the intersection of the physical and virtual world, interested in exploring the fields of robotics and machine learning. */}
           
           <div className="flex flex-col gap-6 justify-center items-center">
@@ -53,33 +53,40 @@ const Hero = () => {
               <span className="text-lg font-semibold text-foreground hover:text-primary transition-colors duration-300">
                 View My Work
               </span>
-              <div className="absolute bottom-0 left-1/4 w-1/2 h-1 bg-gradient-primary rounded-full opacity-80 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute bottom-0 left-[0%] w-[100%] h-1 bg-gradient-primary rounded-full opacity-80 group-hover:opacity-100 transition-opacity duration-300"></div>
             </button>
             
             <div className="flex gap-4 items-center">
               <Button 
-                variant="outline" 
-                size="sm"
-                className="border-primary/30 text-foreground hover:bg-primary/10 hover:text-primary"
+              variant="outline" 
+              size="sm"
+              className="border-primary/30 text-foreground hover:bg-primary/10 hover:text-primary"
+              onClick={() => {
+                window.open('mailto:vc365@cornell.edu', '_blank', 'noopener,noreferrer');
+              }}
+              title="Send me an email"
               >
-                <Mail className="w-4 h-4" />
+              <Mail className="w-4 h-4" />
               </Button>
-              
-              <Button 
+              {/* <Button 
                 variant="outline" 
                 size="sm"
                 className="border-primary/30 text-foreground hover:bg-primary/10 hover:text-primary"
               >
                 <Github className="w-4 h-4" />
-              </Button>
+              </Button> */}
               
-              <Button 
+                <Button 
                 variant="outline" 
                 size="sm"
                 className="border-primary/30 text-foreground hover:bg-primary/10 hover:text-primary"
-              >
+                onClick={() => {
+                  window.open('https://www.linkedin.com/in/vivien-chenn/', '_blank', 'noopener,noreferrer');
+                }}
+                title="Visit my LinkedIn"
+                >
                 <Linkedin className="w-4 h-4" />
-              </Button>
+                </Button>
               
            
             </div>

@@ -107,4 +107,10 @@ All colors MUST be HSL.
     transform: translateY(-8px);
     box-shadow: var(--shadow-glow);
   }
+
+  .gradient-markers li::marker {
+  background: linear-gradient(to right, var(--tw-gradient-from), var(--tw-gradient-to));
+  -webkit-background-clip: text;
+  color: transparent;
+}
 }

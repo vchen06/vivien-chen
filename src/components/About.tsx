@@ -13,41 +13,24 @@ const About = () => {
           <div className="glass-card p-8 hover-lift">
             <h3 className="text-2xl font-semibold mb-6 text-primary">Who I Am</h3>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              With over 5 years of experience in web development, I've had the privilege of working 
-              with diverse teams and tackling challenging projects that push the boundaries of what's possible.
+              I'm a sophomore at Cornell University College of Engineering studying computer science. I'm excited about building software that works with real-world data and problems. Currently, I'm super interested in diving into the realms of machine learning and robotics and how they can bridge the gap between digital and physical worlds.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              I started my journey as a curious developer who loved solving problems through code. 
-              Today, I specialize in creating scalable, user-focused applications that make a real impact.
+              On the nontechnical side, I grew up in the Bay Area, California, and I love skiing, soaking in the sun, roller coasters, and birds!
             </p>
            
           </div>
           
           <div className="glass-card p-8 hover-lift">
-            <h3 className="text-2xl font-semibold mb-6 text-primary">What I Do</h3>
-            <ul className="space-y-4">
-              <li className="flex items-center">
-                <div className="w-2 h-2 bg-gradient-primary rounded-full mr-4"></div>
-                <span className="text-muted-foreground">Frontend Development (React, TypeScript, Tailwind)</span>
-              </li>
-              <li className="flex items-center">
-                <div className="w-2 h-2 bg-gradient-primary rounded-full mr-4"></div>
-                <span className="text-muted-foreground">Backend Development (Node.js, Python, PostgreSQL)</span>
-              </li>
-              <li className="flex items-center">
-                <div className="w-2 h-2 bg-gradient-primary rounded-full mr-4"></div>
-                <span className="text-muted-foreground">Cloud Infrastructure (AWS, Docker, CI/CD)</span>
-              </li>
-              <li className="flex items-center">
-                <div className="w-2 h-2 bg-gradient-primary rounded-full mr-4"></div>
-                <span className="text-muted-foreground">UI/UX Design & Prototyping</span>
-              </li>
-              <li className="flex items-center">
-                <div className="w-2 h-2 bg-gradient-primary rounded-full mr-4"></div>
-                <span className="text-muted-foreground">Technical Writing & Documentation</span>
-              </li>
-            </ul>
-          </div>
+  <h3 className="text-2xl font-semibold mb-6 text-primary">What I Do</h3>
+  <ul className="gradient-markers list-disc list-inside space-y-3 text-muted-foreground text-base leading-relaxed">
+  <li>Object-Oriented Programming and Data Structures</li>
+  <li>Backend Development (Node.js, React.js, Python, PostgreSQL, Docker)</li>
+  <li>Robotics (ROS, Lidar, Arduino, CAD)</li>
+  <li>Machine Learning (TensorFlow, PyTorch, CV)</li>
+  <li>Technical Communication & Leadership</li>
+</ul>
+</div>
         </div>
       </div>
     </section>

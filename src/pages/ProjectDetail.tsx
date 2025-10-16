@@ -17,9 +17,10 @@ const ProjectDetail = () => {
       title: "Critterworld: Artificial Life Simulator",
       description: "An app that simulates a world of critters that act autonomously according to unique “genomes”, completing tasks such as eating, reproducing, and traveling.",
       gallery: [
-        { type: "image", src: "/images/critterworld.png" },
+        
         { type: "text", content: "Critterworld allows users to either upload a custom world or generate a random one, then allows users to upload critters. Users can either simulate the world or increment it by time steps of 1, where the critters act according to their genome programs that are displayed when you click on a critter." },
         { type: "text", content: "Critterworld was made for a half-semester long project for CS2112, in a team of 4. It taught me a lot about in-depth Java and OOP concepts such as threads, MVC architecture, GUI design, and developing clean, scalable code. With so many different components, it's been one of the most challenging projects that I've worked on so far." },
+        , { type: "image", src: import.meta.env.BASE_URL + "/images/critterworld.png" }
       ]
     },
     {
@@ -27,9 +28,10 @@ const ProjectDetail = () => {
       title: "PoseGuru: Automated Yoga Instructor",
       description: "An assistive yoga app to help users practice yoga correctly at home by providing a workout to follow and real-time feedback on poses.",
       gallery: [
-        { type: "image", src: "/images/pose.png" },
-        { type: "image", src: "/images/posestart.png" },
-        { type: "text", content: "PoseGuru uses OpenCV and MediaPipe BlazePose for real-time body tracking to detect whether users are holding the correct yoga poses. It has them hold the pose properly for a select amount of time before moving on to the rest of the workout." },
+        { type: "text", content: "PoseGuru uses OpenCV and MediaPipe BlazePose for real-time body tracking to detect whether users are holding the correct yoga poses. It has them hold the pose properly for a select amount of time before moving on to the rest of the workout. The model was trained on a pre-annotated online dataset, then integrated into the real-time OpenCV camera and GUI built with Python." },
+        { type: "text", content: "I created PoseGuru with a partner for the 2025 Cornell Makeathon, winning second place in the software track."},
+        { type: "image", src: import.meta.env.BASE_URL + "/images/pose.png" },
+        { type: "image", src: import.meta.env.BASE_URL + "/images/posestart.png" }
       ]
     },
     {
@@ -48,10 +50,11 @@ const ProjectDetail = () => {
       title: "Multi-Process Loom",
       description: "An automated multi-axis loom machine capable of manufacturing user-requested 3D weaving, knitting, and braiding patterns.",
       gallery: [
-        { type: "text", content: " This research project strives to further the abilites of textile manufacturing by creating a machine+design software pipeline akin to 3D printing but for yarn fabrication. I worked under Professor Francois Guimbretiere and PhD student Shuhong Wang to develop the motor control and electronic communication software for the machine and electronic yarn tensioners. I was also involved in the circuit and mechanical design for elements such as the braiding table and comb rotational system."},
-        { type: "image", src: "/images/loom1.JPG" },
-        { type: "image", src: "/images/loom2.png" },
-        { type: "image", src: "/images/loom3.png" }
+        { type: "text", content: "I received the Cornell Bowers Undergraduate Research Experience Grant to work on a research project under Prof. Francois Guimbretiere for Summer 2025."},
+        { type: "text", content: "This research project strives to further the abilites of textile manufacturing by creating a machine+design software pipeline akin to 3D printing but for yarn fabrication. I developed the motor control, kinematic movement, and electronic communication software for the machine arms and electronic yarn tensioners. I was also involved in the circuit and mechanical design for elements such as the braiding table and comb rotational system."},
+        { type: "image", src: import.meta.env.BASE_URL + "/images/loom1.JPG" },
+        { type: "image", src: import.meta.env.BASE_URL + "/images/loom2.png" },
+        { type: "image", src: import.meta.env.BASE_URL + "/images/loom3.png" }
       ]
     },
     {
@@ -60,7 +63,8 @@ const ProjectDetail = () => {
       description: "Building the computer vision model and LiDAR object detection system as part of a team building an autonomous boat.",
       gallery: [
         { type: "text", content: "" },
-        { type: "image", src: "/images/pcl.png" }
+        { type: "image", src: import.meta.env.BASE_URL + "/images/pcl.png" },
+        { type: "image", src: import.meta.env.BASE_URL + "/images/buoy.png" }
       ]
     },
     {
@@ -69,8 +73,8 @@ const ProjectDetail = () => {
       description: "A webapp containing graphs and Unity simulations with live data representing pollution emissions in NYC boroughs.",
       gallery: [
         { type: "text", content: "" },
-        { type: "image", src: "/images/dt1.png" },
-        { type: "image", src: "/images/dt2.png" }
+        { type: "image", src: import.meta.env.BASE_URL + "/images/dt1.png" },
+        { type: "image", src: import.meta.env.BASE_URL + "/images/dt2.png" }
       ]
     }
   ];

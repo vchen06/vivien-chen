@@ -5,18 +5,25 @@ import { Link } from 'react-router-dom';
 const Projects = () => {
   const projects = [
     {
-      id: "autoboat",
-      title: "Cornell AutoBoat",
-      description: "Building the computer vision model and LiDAR object detection system as part of a team building an autonomous boat.",
-      technologies: ["C++", "ROS2", "Python", "YOLO", "LiDAR", "OpenCV"],
-      image: "🛥️"
-    },
-    {
       id: "dtwin",
       title: "Sustainability Digital Twin",
       description: "A webapp containing graphs and Unity simulations with live data representing pollution emissions in NYC boroughs.",
       technologies: ["SQL", "PostgreSQL", "Java", "React", "Node.js", "Unity", "Python"],
       image: "🏙️"    
+    },
+    {
+      id: "critterworld",
+      title: "Critterworld: Artificial Life Simulator",
+      description: "An app that simulates a world of critters that act autonomously according to unique “genomes”, completing tasks such as eating, reproducing, and traveling.",
+      technologies: ["Java", "JavaFX", "Threads", "MVC", "Parsing"],
+      image: "🦎"
+    },
+    {
+      id: "autoboat",
+      title: "Cornell AutoBoat",
+      description: "Building the computer vision model and LiDAR object detection system as part of a team building an autonomous boat.",
+      technologies: ["C++", "ROS2", "Python", "YOLO", "LiDAR", "OpenCV"],
+      image: "🛥️"
     },
     {
       id: "loom",
@@ -31,13 +38,6 @@ const Projects = () => {
       description: "An assistive yoga app to help users practice yoga correctly at home by providing a workout to follow and real-time feedback on poses.",
       technologies: ["Python", "OpenCV", "Tkinter", "scikit-learn", "MediaPipe"],
       image: "🧘"
-    },
-    {
-      id: "critterworld",
-      title: "Critterworld: Artificial Life Simulator",
-      description: "An app that simulates a world of critters that act autonomously according to unique “genomes”, completing tasks such as eating, reproducing, and traveling.",
-      technologies: ["Java", "JavaFX", "Threads", "MVC", "Parsing"],
-      image: "🦎"
     }
   ];
 

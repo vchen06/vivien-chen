@@ -29,9 +29,8 @@ const ProjectDetail = () => {
       description: "An assistive yoga app to help users practice yoga correctly at home by providing a workout to follow and real-time feedback on poses.",
       gallery: [
         { type: "text", content: "PoseGuru uses OpenCV and MediaPipe BlazePose for real-time body tracking to detect whether users are holding the correct yoga poses. It has them hold the pose properly for a select amount of time before moving on to the rest of the workout. The model was trained on a pre-annotated online dataset, then integrated into the real-time OpenCV camera and GUI built with Python." },
-        { type: "text", content: "I created PoseGuru with a partner for the 2025 Cornell Makeathon, winning second place in the software track."},
         { type: "image", src: import.meta.env.BASE_URL + "/images/pose.png" },
-        { type: "image", src: import.meta.env.BASE_URL + "/images/posestart.png" }
+        { type: "image", src: import.meta.env.BASE_URL + "/images/pose2.png" }
       ]
     },
     {
@@ -62,9 +61,10 @@ const ProjectDetail = () => {
       title: "Cornell AutoBoat",
       description: "Building the computer vision model and LiDAR object detection system as part of a team building an autonomous boat.",
       gallery: [
-        { type: "text", content: "" },
-        { type: "image", src: import.meta.env.BASE_URL + "/images/pcl.png" },
-        { type: "image", src: import.meta.env.BASE_URL + "/images/buoy.png" }
+        { type: "text", content: "As a member of the perception subteam, my focus is on building the object detection pipeline for our boat. Currently, I have been working on improving our YOLO computer vision model by breaking it into specialized model for each required detection task." },
+        { type: "text", content: "I have also been working on R&D for our new LiDAR system. We are working on developing algorithms for filtering and clustering that are optimal for our needs." },
+        { type: "image", src: import.meta.env.BASE_URL + "/images/buoy.png" },
+        { type: "image", src: import.meta.env.BASE_URL + "/images/pcl.png" }
       ]
     },
     {
@@ -72,9 +72,19 @@ const ProjectDetail = () => {
       title: "Sustainability Digital Twin",
       description: "A webapp containing graphs and Unity simulations with live data representing pollution emissions in NYC boroughs.",
       gallery: [
-        { type: "text", content: "" },
+        { type: "text", content: "This was a project in collaboration with other undergraduate and graduate students to create a digital twin of New York City modeling pollution emissions. The website gives real-time monitored statistics of pollutants and heat for buildings across the city and also graphs and charts showing general statistics. I was responsible for creating the React dashboards in React for users to select different emissions options and dates to visualize trends, and developing the SQL database and RESTful API endpoints to allow for real-time data updates in the Unity simulations and trend charts." },
         { type: "image", src: import.meta.env.BASE_URL + "/images/dt1.png" },
         { type: "image", src: import.meta.env.BASE_URL + "/images/dt2.png" }
+      ]
+    },
+    {
+      id: "paper",
+      title: "Paper Parser: Technical Reading Assistant",
+      description: "An LLM-based tool for understanding and summarizing lenghty technical documents.",
+      gallery: [
+        { type: "text", content: "Paper Parser is an LLM-based system that summarizes long technical documents like research papers and textbook chapters by splitting them into semantic sections, classifying each section, and applying type-aware summarization using the Llama-3 model. The pipeline produces clearer, more structured summaries than single-prompt approaches, avoiding the hallucination and obscurity that often happens on long texts with typical LLMs." },
+        { type: "image", src: import.meta.env.BASE_URL + "/images/paper.png" },
+        { type: "text", content: "(The UI still needs a bit of work.)" }
       ]
     }
   ];
@@ -120,8 +130,8 @@ const ProjectDetail = () => {
             <div className="space-y-8">
               {project.gallery?.map((block, index) => {
                 if (block.type === "image") {
-                  // Special styling for yoga project images
-                  if (project.id === "yoga" || project.id === "dtwin") {
+                  // for projects with multiple images
+                  if (project.id === "yoga" || project.id === "dtwin" || project.id === "autoboat") {
                     return (
                       <img
                         key={index}

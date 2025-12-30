@@ -33,7 +33,7 @@ const Hero = () => {
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground">
             Hi, I'm{' '}
-            <span className="gradient-text">Vivien!</span>
+            <span className="gradient-text">Vivien.</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-4 font-medium">

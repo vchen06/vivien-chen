@@ -5,6 +5,26 @@ import { Link } from 'react-router-dom';
 const Projects = () => {
   const projects = [
     {
+      id: "autoboat",
+      title: "Cornell AutoBoat",
+      description: "Building the computer vision model and LiDAR object detection system as part of a team building an autonomous boat.",
+      technologies: ["C++", "ROS2", "Python", "PyTorch", "LiDAR", "OpenCV"],
+      image: "🛥️"
+    },
+    {
+      id: "paper",
+      title: "Paper Parser: Technical Reading Assistant",
+      description: "An LLM-based tool for understanding and summarizing lenghty technical documents.",
+      technologies: ["Python", "TypeScript", "LLM", "PyTorch", "Llama3", "Prompt Engineering"],
+      image: "📄" 
+    },
+    {
+      id: "yoga",
+      title: "PoseGuru: Automated Yoga Instructor",
+      description: "An assistive yoga app to help users practice yoga correctly at home by providing a workout to follow and real-time feedback on poses.",
+      technologies: ["Python", "OpenCV", "Tkinter", "scikit-learn", "MediaPipe", "Pandas"],
+      image: "🧘"
+    },{
       id: "dtwin",
       title: "Sustainability Digital Twin",
       description: "A webapp containing graphs and Unity simulations with live data representing pollution emissions in NYC boroughs.",
@@ -18,26 +38,13 @@ const Projects = () => {
       technologies: ["Java", "JavaFX", "Threads", "MVC", "Parsing"],
       image: "🦎"
     },
-    {
-      id: "autoboat",
-      title: "Cornell AutoBoat",
-      description: "Building the computer vision model and LiDAR object detection system as part of a team building an autonomous boat.",
-      technologies: ["C++", "ROS2", "Python", "YOLO", "LiDAR", "OpenCV"],
-      image: "🛥️"
-    },
+    
     {
       id: "loom",
       title: "Multi-Process Loom",
       description: "An automated multi-axis loom machine capable of achieving user-requested 3D weaving, knitting, and braiding patterns.",
-      technologies: ["C++", "Arduino", "Python","ROS", "Rapid Prototyping"],
+      technologies: ["C++", "Arduino", "Python","ROS", "Microcontrollers","Rapid Prototyping"],
       image: "🧶"
-    },
-    {
-      id: "yoga",
-      title: "PoseGuru: Automated Yoga Instructor",
-      description: "An assistive yoga app to help users practice yoga correctly at home by providing a workout to follow and real-time feedback on poses.",
-      technologies: ["Python", "OpenCV", "Tkinter", "scikit-learn", "MediaPipe"],
-      image: "🧘"
     }
   ];
 

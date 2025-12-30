@@ -61,8 +61,8 @@ const ProjectDetail = () => {
       title: "Cornell AutoBoat",
       description: "Building the computer vision model and LiDAR object detection system as part of a team building an autonomous boat.",
       gallery: [
-        { type: "text", content: "As a member of the perception subteam, my focus is on building the object detection pipeline for our boat. Currently, I have been working on improving our YOLO computer vision model by breaking it into specialized model for each required detection task." },
-        { type: "text", content: "I have also been working on R&D for our new LiDAR system. We are working on developing algorithms for filtering and clustering that are optimal for our needs." },
+        { type: "text", content: "As a member of the perception subteam, my focus is on building the object detection pipeline to support autonomous navigation for our boat. Currently, I am working on improving our CNN computer vision model by breaking it into specialized models for each required detection task, as well as experimenting with data augmentation and parameter tuning." },
+        { type: "text", content: "I am also working on object detection through our new LiDAR sensor, which returns point cloud data. We are working on developing custom algorithms for filtering and detection of this data with the help of algorithms such as RANSAC and PCA." },
         { type: "image", src: import.meta.env.BASE_URL + "/images/buoy.png" },
         { type: "image", src: import.meta.env.BASE_URL + "/images/pcl.png" },
         { type: "image", src: import.meta.env.BASE_URL + "/images/lidar.png" }

@@ -1,3 +1,6 @@
+// npm run build
+// npm run deploy
+
 const About = () => {
   return (
     <section id="about" className="py-20 px-6">

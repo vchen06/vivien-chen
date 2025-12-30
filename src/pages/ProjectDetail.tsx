@@ -64,7 +64,8 @@ const ProjectDetail = () => {
         { type: "text", content: "As a member of the perception subteam, my focus is on building the object detection pipeline for our boat. Currently, I have been working on improving our YOLO computer vision model by breaking it into specialized model for each required detection task." },
         { type: "text", content: "I have also been working on R&D for our new LiDAR system. We are working on developing algorithms for filtering and clustering that are optimal for our needs." },
         { type: "image", src: import.meta.env.BASE_URL + "/images/buoy.png" },
-        { type: "image", src: import.meta.env.BASE_URL + "/images/pcl.png" }
+        { type: "image", src: import.meta.env.BASE_URL + "/images/pcl.png" },
+        { type: "image", src: import.meta.env.BASE_URL + "/images/lidar.png" }
       ]
     },
     {
